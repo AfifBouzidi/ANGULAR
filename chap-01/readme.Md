@@ -28,5 +28,12 @@
 - src/polyfills.ts: provids javacript needed by angular but not supported by browser
 - src/styles.css: global styles of the application 
 - src/test.ts: setup the test environment 
-  
-  
+- .angular-cli.json: configuration fo angular cli
+- .editorconfig: all dev team member must have the same config
+- .gitignore: files to be egnored by git
+- karma.conf.js: test runner of javascript code 
+- package.json : name and version of the application, dependencies, - devdependencies...
+- protractor.conf.js: run end to end test
+-tsconfig.json: config of typescipt compiler 
+- tslint.json: static analysis code of typescript 
+
