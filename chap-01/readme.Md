@@ -37,3 +37,7 @@
 -tsconfig.json: config of typescipt compiler 
 - tslint.json: static analysis code of typescript 
 
+**Webpack**  
+- Angular/cli uses a tool called webpack: build automation tool
+- Minify dependencies and create bundles
+- Optimization
