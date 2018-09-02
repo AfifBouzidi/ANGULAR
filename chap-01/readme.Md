@@ -41,3 +41,37 @@
 - Angular/cli uses a tool called webpack: build automation tool
 - Minify dependencies and create bundles
 - Optimization
+
+**Building Blocks of Angular Apps**   
+*Component*  
+- Component encapsulates : data, html and logic for view 
+- Every application is composed by one or several components 
+- We can reuse a component in multiple places in the same App or different App
+1. create a class 
+2. export it 
+3. add and configure decorator @Component: selector, templateUrl, 
+styleUrls 
+4. register the component in the module: AppModule (app.module.ts)
+
+ - Alternative way  to Generate Components Using Angular CLI: ng g c math
+
+*Modules* 
+- Module is a container of group of related components
+- Every Angular App has at least one module called AppModule
+- As the application grows the AppModule is divided in small modules 
+- Each module is responsible of a specific area of the application
+
+*Template*   
+Angular manages what the user sees and can do through the interaction of a component class instance (the component) and its user-facing template
+
+*Directives*  
+Directive is used to manipulate the HTML dom: add elements, modify,delete...
+
+*service*  
+- A class contains the business logic (comunicate via http...)
+- register service in the provider section of the AppModule 
+- Generating Services Using Angular CLI: ng g s serviceName
+- @Injectable : used if the service need dependecies
+
+*Dependency Injection*  
+to activate dependecy injection, dependecies must be registred in the AppModule (in the provider section)
