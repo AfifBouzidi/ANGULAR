@@ -1,0 +1,9 @@
+<input [(ngModel)] ="limit">
+{{lifeAndCareer |summary:limit}}
+<br>
+Work:
+<ul>
+  <li *ngFor="let work of works">
+  {{work | uppercase }}
+  </li>
+</ul>
