@@ -3,13 +3,19 @@
 - npm: node package manager to install third-party library  
 - Angular CLI: tools to create new angular projects   
 - npm install -g @angular/cli  
-- check version: ng --version  
+- check version: ng --version 
+- npm install : the npm looks at the package.json and install dependecies 
 
 **Proxy configuration**
 - npm config set proxy http://proxy.company.com:8080
 - npm config set https-proxy http://proxy.company.com:8080  
 - clear http proxy setting : npm config rm proxy
 - clear https proxy setting : npm config rm https-proxy  
+
+**Error: Cannot find module '@angular-devkit/core'**   
+- npm update -g @angular/cli
+- editing my package.json changing the line: "@angular/cli": "1.6.0" -> "@angular/cli": "^1.6.0"
+- npm update
 
 **First Angular App**   
 - ng new hello-world
